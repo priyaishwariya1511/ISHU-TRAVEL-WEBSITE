@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment - Travel Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>💳 Payment</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="feedback">
+
+  <div class="feedback-form">
+
+    <!-- UPI PAYMENT -->
+    <h2>Pay using UPI</h2>
+    <p>Scan the QR code using GPay / PhonePe / Paytm</p>
+
+    <img src="data:image/png;base64,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" alt="UPI QR Code" class="qr">
+
+    <p><strong>UPI ID:</strong> travelguide@upi</p>
+
+    <button class="btn" onclick="upiSuccess()">I Have Paid</button>
+
+    <p id="upiMsg" style="color: green; font-weight: bold;"></p>
+
+    <hr><br>
+
+    <!-- CARD PAYMENT -->
+    <h2>Or Pay using Card</h2>
+
+    <form id="paymentForm">
+      <label>Name on Card</label><br>
+      <input type="text" required><br><br>
+
+      <label>Card Number</label><br>
+      <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" required><br><br>
+
+      <label>Expiry Date</label><br>
+      <input type="month" required><br><br>
+
+      <label>CVV</label><br>
+      <input type="password" maxlength="3" required><br><br>
+
+      <label>Amount</label><br>
+      <input type="text" value="₹2000" readonly><br><br>
+
+      <button type="submit" class="btn">Pay Now</button>
+    </form>
+
+    <p id="cardMsg" style="color: green; font-weight: bold;"></p>
+
+  </div>
+
+</section>
+
+<script>
+  // UPI DEMO SUCCESS
+  function upiSuccess() {
+    document.getElementById("upiMsg").innerText =
+      "✅ Payment Successful via UPI! Booking Confirmed.";
+  }
+
+  // CARD DEMO SUCCESS
+  document.getElementById("paymentForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    document.getElementById("cardMsg").innerText =
+      "✅ Payment Successful! Thank you for booking with Travel Guide.";
+
+    this.reset();
+  });
+</script>
+
+</body>
+</html>

@@ -40,5 +40,15 @@
 
 </section>
 
+<script>
+  document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // page reload stop
+
+    alert("✅ Feedback Successfully Submitted!");
+
+    this.reset(); // form clear aagum
+  });
+</script>
+
 </body>
 </html>

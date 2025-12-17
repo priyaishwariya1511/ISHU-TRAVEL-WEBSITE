@@ -23,13 +23,9 @@
   </div>
 
   <div class="feedback-form">
-    <h2>Get in Touch</h2>
+    <h2>Send Us a Message</h2>
 
-    <p><strong>Email:</strong> travelguide@gmail.com</p>
-    <p><strong>Phone:</strong> +91 98765 43210</p>
-    <p><strong>Location:</strong> Tamil Nadu, India</p>
-
-    <form>
+    <form id="contactForm">
       <label>Name</label><br>
       <input type="text" required><br><br>
 
@@ -41,9 +37,32 @@
 
       <button type="submit" class="btn">Send Message</button>
     </form>
+
+    <!-- SUCCESS MESSAGE -->
+    <p id="contactMsg" style="color: green; font-weight: bold;"></p>
   </div>
 
 </section>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // page reload stop
+
+    document.getElementById("contactMsg").innerText =
+      "✅ Message Successfully Sent! We will contact you soon.";
+
+    this.reset(); // form clear
+  });
+</script>
+<script>
+  function sendMsg() {
+    document.getElementById("contactMsg").innerText =
+      "✅ Message Successfully Sent! We will contact you soon.";
+
+    document.getElementById("contactForm").reset();
+  }
+</script>
+
 
 </body>
 </html>

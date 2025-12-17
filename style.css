@@ -154,3 +154,12 @@ section {
   padding: 8px;
   margin-top: 5px;
 }
+.qr {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 15px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
